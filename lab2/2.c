@@ -19,38 +19,38 @@ int main()
     // Check variables > 0
     if (a < 0 && b < 0 && c < 0)
     {
-        printf("All inputs must be > 0");
+        printf("this is not a triangle\n");
         return 1;
     }
 
     // Check if triangle
     if ((a > b + c) || (b > a + c) || (c > a + b))
     {
-        printf("Non e' un triangolo\n");
+        printf("this is not a triangle");
         return 1;
     }
 
     // Check type of triangle
     if ((a == b) && (b == c) && (c == a))
     {
-        printf("E' equilatero\n");
+        printf("the triangle is equilateral\n");
         return 0;
     }
 
     if ((a == b) || (a == c) || (b == c))
     {
-        printf("E' isoscele\n");
+        printf("the triangle is isosceles\n");
     }
 
     if ((a != b) && (b != c) && (c != a))
     {
-        printf("E' scaleno\n");
+        printf("the triangle is scalene\n");
     }
 
     // Check if square triangle
     if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
     {
-        printf("E' rettangolo\n");
+        printf("the triangle is rectangled\n");
         return 0;
     }
 
