@@ -17,7 +17,7 @@ int main()
     printf("Ecco i 3 lati: %d, %d, %d\n", a, b, c);
 
     // Check variables > 0
-    if (a < 0 && b < 0 && c < 0)
+    if (a < 0 || b < 0 || c < 0)
     {
         printf("this is not a triangle\n");
         return 1;
